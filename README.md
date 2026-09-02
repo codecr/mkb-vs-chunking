@@ -97,4 +97,4 @@ aunque compartan el mismo prefijo de S3.
 
 ## Licencia
 
-_(pendiente -- agregar la que corresponda)_
+MIT -- ver [`LICENSE`](LICENSE).
