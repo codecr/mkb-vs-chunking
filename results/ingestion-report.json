@@ -1,0 +1,21 @@
+[
+  {
+    "target": "managed",
+    "knowledge_base_id": "TQICF98WU4",
+    "data_source_id": "NEGIBQPZ9U",
+    "ingestion_job_id": "TRUPQGRSHK",
+    "status": "COMPLETE",
+    "statistics": {
+      "numberOfDocumentsScanned": 4,
+      "numberOfMetadataDocumentsScanned": 0,
+      "numberOfNewDocumentsIndexed": 1,
+      "numberOfModifiedDocumentsIndexed": 0,
+      "numberOfMetadataDocumentsModified": 0,
+      "numberOfDocumentsDeleted": 0,
+      "numberOfDocumentsFailed": 0,
+      "numberOfDocumentsSkipped": 0
+    },
+    "failure_reasons": null,
+    "elapsed_s": 183.1
+  }
+]

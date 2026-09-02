@@ -1,0 +1,60 @@
+{
+  "D-setA": {
+    "job_arn": "arn:aws:bedrock:us-east-1:111111111111:evaluation-job/30pfjntazcfx",
+    "dataset_uri": "s3://gerardo-mkb-benchmark-eval/input/eval-D-setA.jsonl",
+    "status": "Completed",
+    "failure_messages": []
+  },
+  "A-setA": {
+    "job_arn": "arn:aws:bedrock:us-east-1:111111111111:evaluation-job/np8lrdmvcbyx",
+    "dataset_uri": "s3://gerardo-mkb-benchmark-eval/input/eval-A-setA.jsonl",
+    "status": "Completed",
+    "failure_messages": []
+  },
+  "B-setA": {
+    "job_arn": "arn:aws:bedrock:us-east-1:111111111111:evaluation-job/t7reenc60emp",
+    "dataset_uri": "s3://gerardo-mkb-benchmark-eval/input/eval-B-setA.jsonl",
+    "status": "Completed",
+    "failure_messages": []
+  },
+  "C-setA": {
+    "job_arn": "arn:aws:bedrock:us-east-1:111111111111:evaluation-job/5yufxc7pt3md",
+    "dataset_uri": "s3://gerardo-mkb-benchmark-eval/input/eval-C-setA.jsonl",
+    "status": "Completed",
+    "failure_messages": []
+  },
+  "A-setB": {
+    "job_arn": "arn:aws:bedrock:us-east-1:111111111111:evaluation-job/0o74rgl9zein",
+    "dataset_uri": "s3://gerardo-mkb-benchmark-eval/input/eval-A-setB.jsonl",
+    "status": "Completed",
+    "failure_messages": []
+  },
+  "B-setB": {
+    "job_arn": "arn:aws:bedrock:us-east-1:111111111111:evaluation-job/v7o8jqsllbbo",
+    "dataset_uri": "s3://gerardo-mkb-benchmark-eval/input/eval-B-setB.jsonl",
+    "status": "Completed",
+    "failure_messages": []
+  },
+  "C-setB": {
+    "job_arn": "arn:aws:bedrock:us-east-1:111111111111:evaluation-job/as4uqwm8e49b",
+    "dataset_uri": "s3://gerardo-mkb-benchmark-eval/input/eval-C-setB.jsonl",
+    "status": "Completed",
+    "failure_messages": []
+  },
+  "D-setB": {
+    "job_arn": "arn:aws:bedrock:us-east-1:111111111111:evaluation-job/6n6r0j2l5zfi",
+    "dataset_uri": "s3://gerardo-mkb-benchmark-eval/input/eval-D-setB.jsonl",
+    "status": "Completed",
+    "failure_messages": []
+  },
+  "E-setA": {
+    "job_arn": "arn:aws:bedrock:us-east-1:111111111111:evaluation-job/kcsg0m8w6nra",
+    "dataset_uri": "s3://gerardo-mkb-benchmark-eval/input/eval-E-setA.jsonl",
+    "status": "Completed"
+  },
+  "E-setB": {
+    "job_arn": "arn:aws:bedrock:us-east-1:111111111111:evaluation-job/vm4skp2c55nv",
+    "dataset_uri": "s3://gerardo-mkb-benchmark-eval/input/eval-E-setB.jsonl",
+    "status": "Completed"
+  }
+}

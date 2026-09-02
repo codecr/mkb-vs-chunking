@@ -1,0 +1,27 @@
+# Entorno local
+.venv/
+__pycache__/
+*.pyc
+
+# Estado y outputs generados localmente -- contienen IDs de cuenta/recursos
+# reales de una corrida especifica, no son codigo fuente.
+generated.env
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/tfplan
+terraform/tfdestroy
+
+# Corpus re-descargado (grande, redistribuible desde las URLs de
+# corpus-manifest.json -- no hace falta versionarlo).
+corpus-staging/
+
+# Capturas de pantalla para el articulo, no para el repo de codigo.
+images/
+
+# Config local de Claude Code / tooling, no del proyecto.
+.claude/
+
+# Notas de investigacion / narrativa de hallazgos -- vive en el articulo
+# publicado, no en este repo de referencia.
+HALLAZGOS.md

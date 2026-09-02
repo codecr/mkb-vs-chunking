@@ -1,0 +1,4 @@
+# boto3/botocore >= 1.43.32 es minimo confirmado: AgenticRetrieveStream y
+# Bedrock Managed Knowledge Bases se lanzaron juntos en esa version exacta
+# (ver README.md, seccion "Afirmaciones - estado 2026-09-01").
+boto3>=1.43.32

@@ -1,0 +1,4 @@
+{
+  "C-setB": "s3://gerardo-mkb-benchmark-eval/input/eval-C-setB.jsonl",
+  "E-setB": "s3://gerardo-mkb-benchmark-eval/input/eval-E-setB.jsonl"
+}

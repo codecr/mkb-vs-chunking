@@ -1,0 +1,12 @@
+{
+  "start": "2026-09-01",
+  "end": "2026-09-03",
+  "tag_activated": false,
+  "by_service_all_account": {},
+  "by_service_tagged": {},
+  "total_all_account": 0,
+  "total_tagged": null,
+  "relevant_service_names_discovered": [
+    "Claude 3.5 Sonnet v2 (Amazon Bedrock Edition)"
+  ]
+}

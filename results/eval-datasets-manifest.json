@@ -1,0 +1,12 @@
+{
+  "D-setA": "s3://gerardo-mkb-benchmark-eval/input/eval-D-setA.jsonl",
+  "A-setA": "s3://gerardo-mkb-benchmark-eval/input/eval-A-setA.jsonl",
+  "B-setA": "s3://gerardo-mkb-benchmark-eval/input/eval-B-setA.jsonl",
+  "C-setA": "s3://gerardo-mkb-benchmark-eval/input/eval-C-setA.jsonl",
+  "A-setB": "s3://gerardo-mkb-benchmark-eval/input/eval-A-setB.jsonl",
+  "B-setB": "s3://gerardo-mkb-benchmark-eval/input/eval-B-setB.jsonl",
+  "C-setB": "s3://gerardo-mkb-benchmark-eval/input/eval-C-setB.jsonl",
+  "D-setB": "s3://gerardo-mkb-benchmark-eval/input/eval-D-setB.jsonl",
+  "E-setA": "s3://gerardo-mkb-benchmark-eval/input/eval-E-setA.jsonl",
+  "E-setB": "s3://gerardo-mkb-benchmark-eval/input/eval-E-setB.jsonl"
+}

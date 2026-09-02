@@ -1,0 +1,144 @@
+{
+  "D-setA": {
+    "files": [
+      "output/D-setA/mkb-vs-chunking-d-seta-1788315781/30pfjntazcfx/inference_configs/0/datasets/D-setA/54fda62e-c381-4287-986c-8790f1366832_output.jsonl"
+    ],
+    "n_records": 25,
+    "n_unmatched": 0,
+    "averages": {
+      "Builtin.Completeness": 0.92,
+      "Builtin.Correctness": 0.94,
+      "Builtin.Faithfulness": 0.86,
+      "Builtin.Helpfulness": 0.939988
+    },
+    "null_result_counts": {}
+  },
+  "A-setA": {
+    "files": [
+      "output/A-setA/mkb-vs-chunking-a-seta-1788315782/np8lrdmvcbyx/inference_configs/0/datasets/A-setA/9ce2c8d1-dffd-4293-8903-a3f104fcbdb9_output.jsonl"
+    ],
+    "n_records": 25,
+    "n_unmatched": 0,
+    "averages": {
+      "Builtin.Completeness": 0.66,
+      "Builtin.Correctness": 0.84,
+      "Builtin.Faithfulness": 0.875,
+      "Builtin.Helpfulness": 0.8466480000000001
+    },
+    "null_result_counts": {
+      "Builtin.Faithfulness": 1
+    }
+  },
+  "B-setA": {
+    "files": [
+      "output/B-setA/mkb-vs-chunking-b-seta-1788315783/t7reenc60emp/inference_configs/0/datasets/B-setA/3fb34b3e-dc2c-493f-a891-72607097cce5_output.jsonl"
+    ],
+    "n_records": 25,
+    "n_unmatched": 0,
+    "averages": {
+      "Builtin.Completeness": 0.68,
+      "Builtin.Correctness": 0.88,
+      "Builtin.Faithfulness": 0.95,
+      "Builtin.Helpfulness": 0.87998
+    },
+    "null_result_counts": {}
+  },
+  "C-setA": {
+    "files": [
+      "output/C-setA/mkb-vs-chunking-c-seta-1788315783/5yufxc7pt3md/inference_configs/0/datasets/C-setA/6c42effd-898b-42f5-8a8d-677f5e51e161_output.jsonl"
+    ],
+    "n_records": 25,
+    "n_unmatched": 0,
+    "averages": {
+      "Builtin.Completeness": 0.67,
+      "Builtin.Correctness": 0.88,
+      "Builtin.Faithfulness": 0.94,
+      "Builtin.Helpfulness": 0.866648
+    },
+    "null_result_counts": {}
+  },
+  "A-setB": {
+    "files": [
+      "output/A-setB/mkb-vs-chunking-a-setb-1788315784/0o74rgl9zein/inference_configs/0/datasets/A-setB/6a50bf2d-1412-4ab4-82cf-084e251b237c_output.jsonl"
+    ],
+    "n_records": 15,
+    "n_unmatched": 0,
+    "averages": {
+      "Builtin.Completeness": 0.7833333333333333,
+      "Builtin.Correctness": 0.7333333333333333,
+      "Builtin.Faithfulness": 0.7833333333333333,
+      "Builtin.Helpfulness": 0.8222066666666666
+    },
+    "null_result_counts": {}
+  },
+  "B-setB": {
+    "files": [
+      "output/B-setB/mkb-vs-chunking-b-setb-1788315785/v7o8jqsllbbo/inference_configs/0/datasets/B-setB/6e2475df-cad3-4526-b181-06b6023d0909_output.jsonl"
+    ],
+    "n_records": 15,
+    "n_unmatched": 0,
+    "averages": {
+      "Builtin.Completeness": 0.5166666666666667,
+      "Builtin.Correctness": 0.5666666666666667,
+      "Builtin.Faithfulness": 0.6,
+      "Builtin.Helpfulness": 0.7777733333333333
+    },
+    "null_result_counts": {}
+  },
+  "C-setB": {
+    "files": [
+      "output/C-setB/mkb-vs-chunking-c-setb-1788315786/as4uqwm8e49b/inference_configs/0/datasets/C-setB/22afc677-c180-40c2-8ef9-1ab7e6d5a4f2_output.jsonl"
+    ],
+    "n_records": 15,
+    "n_unmatched": 0,
+    "averages": {
+      "Builtin.Completeness": 0.5,
+      "Builtin.Correctness": 0.5,
+      "Builtin.Faithfulness": 0.55,
+      "Builtin.Helpfulness": 0.77778
+    },
+    "null_result_counts": {}
+  },
+  "D-setB": {
+    "files": [
+      "output/D-setB/mkb-vs-chunking-d-setb-1788315788/6n6r0j2l5zfi/inference_configs/0/datasets/D-setB/703cc109-df72-4606-8717-a6a40868dc72_output.jsonl"
+    ],
+    "n_records": 15,
+    "n_unmatched": 0,
+    "averages": {
+      "Builtin.Completeness": 0.7,
+      "Builtin.Correctness": 0.7,
+      "Builtin.Faithfulness": 0.55,
+      "Builtin.Helpfulness": 0.87778
+    },
+    "null_result_counts": {}
+  },
+  "E-setA": {
+    "files": [
+      "output/E-setA/mkb-vs-chunking-e-seta-1788362461/kcsg0m8w6nra/inference_configs/0/datasets/E-setA/d0f323e8-c8fc-46be-8ebd-7c3824dcedf0_output.jsonl"
+    ],
+    "n_records": 25,
+    "n_unmatched": 0,
+    "averages": {
+      "Builtin.Completeness": 0.7,
+      "Builtin.Correctness": 0.9,
+      "Builtin.Faithfulness": 0.91,
+      "Builtin.Helpfulness": 0.873312
+    },
+    "null_result_counts": {}
+  },
+  "E-setB": {
+    "files": [
+      "output/E-setB/mkb-vs-chunking-e-setb-1788362463/vm4skp2c55nv/inference_configs/0/datasets/E-setB/96cb783c-3788-4edf-94a2-57652891459f_output.jsonl"
+    ],
+    "n_records": 15,
+    "n_unmatched": 0,
+    "averages": {
+      "Builtin.Completeness": 0.8833333333333333,
+      "Builtin.Correctness": 1.0,
+      "Builtin.Faithfulness": 0.9166666666666666,
+      "Builtin.Helpfulness": 0.9110933333333333
+    },
+    "null_result_counts": {}
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "C-setB": {
+    "job_arn": "arn:aws:bedrock:us-east-1:111111111111:evaluation-job/nf1xob8bszf0",
+    "dataset_uri": "s3://gerardo-mkb-benchmark-eval/input/eval-C-setB.jsonl",
+    "status": "Completed"
+  },
+  "E-setB": {
+    "job_arn": "arn:aws:bedrock:us-east-1:111111111111:evaluation-job/mp9auj91v6r2",
+    "dataset_uri": "s3://gerardo-mkb-benchmark-eval/input/eval-E-setB.jsonl",
+    "status": "Completed"
+  }
+}

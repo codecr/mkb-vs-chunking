@@ -1,0 +1,30 @@
+{
+  "C-setB": {
+    "files": [
+      "output/C-setB/mkb-vs-chunking-c-setb-1788367250/nf1xob8bszf0/inference_configs/0/datasets/C-setB/e971ea7d-c13a-4ac4-b540-ccb5c739b2ec_output.jsonl"
+    ],
+    "n_records": 15,
+    "n_unmatched": 0,
+    "averages": {
+      "Builtin.Completeness": 0.5,
+      "Builtin.Correctness": 0.4666666666666667,
+      "Builtin.Faithfulness": 0.5833333333333334,
+      "Builtin.Helpfulness": 0.7666666666666667
+    },
+    "null_result_counts": {}
+  },
+  "E-setB": {
+    "files": [
+      "output/E-setB/mkb-vs-chunking-e-setb-1788367251/mp9auj91v6r2/inference_configs/0/datasets/E-setB/3c525fa7-7a40-4e07-8871-8f836b3156af_output.jsonl"
+    ],
+    "n_records": 15,
+    "n_unmatched": 0,
+    "averages": {
+      "Builtin.Completeness": 0.8666666666666667,
+      "Builtin.Correctness": 1.0,
+      "Builtin.Faithfulness": 0.8666666666666667,
+      "Builtin.Helpfulness": 0.9222066666666667
+    },
+    "null_result_counts": {}
+  }
+}

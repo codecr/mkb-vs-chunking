@@ -1,0 +1,32 @@
+{
+  "downloaded_at_utc": "2026-09-02T00:58:00Z",
+  "note": "Corpus re-descargado el 2026-09-01/02, NO byte-identico al de abril (ver README.md). Este manifest SI guarda hash -- gap de proceso de abril corregido.",
+  "documents": [
+    {
+      "id": "well-architected",
+      "filename": "well-architected-framework.pdf",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/wellarchitected-framework.pdf",
+      "size_bytes": 14189927,
+      "sha256": "f353c1ec71d32956f2eef0ac6dfd5aef915c6fa43678fdeecc4bdff5cf511dd0",
+      "http_last_modified_observed": "Tue, 01 Sep 2026 18:42:48 GMT",
+      "http_etag_observed": "\"73588530cf372ce09d8c7c04691e10c4\""
+    },
+    {
+      "id": "agentcore-devguide",
+      "filename": "bedrock-agentcore-dg.pdf",
+      "url": "https://docs.aws.amazon.com/pdfs/bedrock-agentcore/latest/devguide/bedrock-agentcore-dg.pdf",
+      "size_bytes": 30420274,
+      "sha256": "18701ce8b2cc5929330e4fcebfe2f2d083f8121a0b96137105988f2ec1bf003b",
+      "http_last_modified_observed": "Wed, 02 Sep 2026 00:38:23 GMT",
+      "http_etag_observed": "\"ab8eaa2eb9a90ab8645b0bbed2243beb\"",
+      "note": "Este documento cambio DOS VECES durante la misma sesion (~90 min): a las 23:09 UTC del 2026-09-01 media 30420374 bytes con otro ETag; al descargarlo ya eran 30420274 bytes con Last-Modified/ETag distintos. Se regenera con frecuencia suficiente para no ser estable ni de una hora a otra."
+    },
+    {
+      "id": "blog-rag",
+      "filename": "blog-rag-evaluation.html",
+      "url": "https://aws.amazon.com/blogs/machine-learning/evaluating-rag-applications-with-amazon-bedrock-knowledge-base-evaluation/",
+      "size_bytes": 1305517,
+      "sha256": "c5ab9dce72ae6378c9a118b863be3a28220473e8e2ddf4a23bafa6ed420e1e9e"
+    }
+  ]
+}
