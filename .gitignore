@@ -8,7 +8,7 @@ __pycache__/
 generated.env
 terraform/.terraform/
 terraform/terraform.tfstate
-terraform/terraform.tfstate.backup
+terraform/terraform.tfstate.*
 terraform/tfplan
 terraform/tfdestroy
 

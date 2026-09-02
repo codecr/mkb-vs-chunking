@@ -10,16 +10,30 @@
 # NO usa -auto-approve en terraform destroy: revisa el plan antes de escribir
 # "yes", igual que 01-terraform-apply.sh.
 #
-# GOTCHA (confirmado por shape de botocore, NO por ejecucion real -- nunca se
-# corrio este teardown contra la cuenta real en esta sesion, ver README):
-# DeleteKnowledgeBase y DeleteDataSource son asincronos, igual que su
-# contraparte de creacion. El shape real de DeleteKnowledgeBase declara
-# status en {CREATING, ACTIVE, DELETING, UPDATING, FAILED,
-# DELETE_UNSUCCESSFUL, UPDATE_UNSUCCESSFUL}; el de DeleteDataSource, status
-# en {AVAILABLE, DELETING, DELETE_UNSUCCESSFUL, CREATING, UPDATING, FAILED}.
-# Se espera a que Get*/Delete* devuelva ResourceNotFoundException como señal
-# de que terminó -- si el comportamiento real difiere, es material nuevo de
-# gotcha para el README, no un bug de este script.
+# GOTCHA CONFIRMADO por ejecucion real: DeleteKnowledgeBase y
+# DeleteDataSource son asincronos, igual que su contraparte de creacion (el
+# paso 1 de abajo, sobre la Managed KB, corrio limpio esperando
+# ResourceNotFoundException -- ~4 min el data source, ~2 min la KB).
+#
+# GOTCHA CONFIRMADO (el importante, corriendo terraform destroy contra la
+# cuenta real): el paso 2 fallo la primera vez con
+#   Error: waiting for Bedrock Agent Data Source ... delete
+#   unexpected state 'DELETE_UNSUCCESSFUL' ... Unable to delete data from
+#   vector store for data source with ID ...
+# Causa real: terraform borro la inline policy s3vectors-access del rol de
+# la KB en PARALELO con el data source de config A (son recursos hermanos
+# sin dependencia explicita entre si -- solo dependen ambos de
+# aws_iam_role.kb). El borrado de vectores en el backend de Bedrock no es
+# instantaneo; para cuando corrio, el permiso ya no estaba. Arreglado con
+# depends_on explicito en terraform/main.tf (module "kb_fixed") -- si
+# segui viendo este error con el codigo actual, es un problema nuevo, no
+# el mismo.
+#
+# Recuperacion manual que se necesito una vez (no debiera repetirse con el
+# fix de arriba, documentado por si acaso): reponer la inline policy
+# borrada, reintentar DeleteDataSource (funciona: retoma un
+# DELETE_UNSUCCESSFUL en vez de fallar de nuevo), esperar a que desaparezca,
+# recien ahi borrar KB / rol / indice+bucket S3 Vectors / bucket de corpus.
 set -euo pipefail
 HERE="$(cd "$(dirname "$0")" && pwd)"
 source "$HERE/config.sh"

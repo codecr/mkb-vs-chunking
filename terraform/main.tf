@@ -191,6 +191,22 @@ module "kb_fixed" {
   chunking_strategy             = "FIXED_SIZE"
   fixed_size_max_tokens         = var.fixed_size_max_tokens
   fixed_size_overlap_percentage = var.fixed_size_overlap_percentage
+
+  # GOTCHA CONFIRMADO corriendo 99-teardown.sh contra la cuenta real: el data
+  # source referencia el rol via kb_role_arn (un output de aws_iam_role.kb),
+  # pero NO referencia las inline policies del rol -- son recursos hermanos,
+  # sin dependencia entre si. En destroy, terraform borro
+  # aws_iam_role_policy.kb_s3vectors en paralelo con el data source; el
+  # borrado real de los vectores (que corre en el backend de Bedrock, no es
+  # instantaneo) todavia necesitaba s3vectors:DeleteVectors y fallo con
+  # DELETE_UNSUCCESSFUL: "Unable to delete data from vector store". depends_on
+  # explicito fuerza el orden inverso en destroy: el modulo (KB + data
+  # source) se borra ANTES que las policies, no en paralelo.
+  depends_on = [
+    aws_iam_role_policy.kb_bedrock,
+    aws_iam_role_policy.kb_s3,
+    aws_iam_role_policy.kb_s3vectors,
+  ]
 }
 
 # -----------------------------------------------------------------------------
